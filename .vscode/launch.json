@@ -16,6 +16,16 @@
       "name": "Attach to Application started using Maven",
       "hostName": "localhost",
       "port": 5247
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-Application<hilla-mfstats>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.example.application.Application",
+      "projectName": "hilla-mfstats",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
     }
   ]
 }

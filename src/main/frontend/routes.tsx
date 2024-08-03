@@ -8,7 +8,7 @@ const AboutView = lazy(async () => import('Frontend/views/about/AboutView.js'));
 export const routes = [
   {
     element: <MainLayout />,
-    handle: { title: 'Hilla CRM' },
+    handle: { title: 'Mfstats' },
     children: [
       { path: '/', element: <ContactsView />, handle: { title: 'Contacts' } },
       { path: '/about', element: <AboutView />, handle: { title: 'About' } },
