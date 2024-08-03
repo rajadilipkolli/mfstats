@@ -27,5 +27,10 @@ jobs:
         java-version: '21'
         distribution: 'temurin'
         cache: maven
-    - name: Build with Maven
+
+    - name: Build and analyze
+      run: ./mvnw clean verify
+
+    - if: ${{ github.ref == 'refs/heads/main' }}
+      name: Build Image with Maven
       run: ./mvnw spring-boot:build-image -Pproduction --file pom.xml
