@@ -9,7 +9,7 @@ import com.example.application.common.SQLContainersConfig;
 class ApplicationTest {
 
     @Test
-    void contextloads() {
+    void contextLoads() {
 
     }
 }
