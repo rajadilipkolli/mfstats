@@ -3,3 +3,4 @@ databaseChangeLog:
       path: migration/
       errorIfMissingOrEmpty: true
       relativeToChangelogFile: true
+
