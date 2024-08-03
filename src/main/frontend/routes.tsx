@@ -3,7 +3,7 @@ import MainLayout from 'Frontend/views/MainLayout.js';
 import { lazy } from 'react';
 import { createBrowserRouter, RouteObject } from 'react-router-dom';
 
-const AboutView = lazy(async () => import('Frontend/views/about/AboutView.js'));
+const UserDetailsView = lazy(async () => import('Frontend/views/userdetails/UserDetailsView.js'));
 
 export const routes = [
   {
@@ -11,7 +11,7 @@ export const routes = [
     handle: { title: 'Mfstats' },
     children: [
       { path: '/', element: <ContactsView />, handle: { title: 'Contacts' } },
-      { path: '/about', element: <AboutView />, handle: { title: 'About' } },
+      { path: '/userDetails', element: <UserDetailsView />, handle: { title: 'UserDetails' } },
     ],
   },
 ] as RouteObject[];

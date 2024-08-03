@@ -1,4 +1,4 @@
-export default function AboutView() {
+export default function UserDetailsView() {
   return (
     <div className="p-m">
       <h2>Hilla full-stack tutorial app</h2>
