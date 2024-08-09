@@ -19,12 +19,22 @@
     },
     {
       "type": "java",
-      "name": "Spring Boot-Application<hilla-mfstats>",
+      "name": "Spring Boot-Application<hilla-folioman>",
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "mainClass": "com.example.application.Application",
-      "projectName": "hilla-mfstats",
+      "projectName": "hilla-folioman",
       "args": "--spring.profiles.active=local",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-TestApplication<hilla-folioman>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.example.application.TestApplication",
+      "projectName": "hilla-folioman",
+      "args": "",
       "envFile": "${workspaceFolder}/.env"
     }
   ]
