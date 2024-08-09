@@ -15,6 +15,6 @@ public class SQLContainersConfig {
     @ServiceConnection
     @RestartScope
     PostgreSQLContainer<?> postgreSQLContainer() {
-        return new PostgreSQLContainer<>(DockerImageName.parse("postgres").withTag("16.3-alpine"));
+        return new PostgreSQLContainer<>(DockerImageName.parse("postgres").withTag("16.4-alpine"));
     }
 }
